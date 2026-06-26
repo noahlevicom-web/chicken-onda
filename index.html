@@ -5,337 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicken ONDA Gallus | Koreanisches Restaurant in Frankfurt</title>
     <meta name="description" content="Authentisches Korean Fried Chicken im Herzen des Gallusviertels in Frankfurt. Knusprig, saftig, unverwechselbar. Jetzt reservieren oder bestellen!">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#fff1f2',
-                            100: '#ffe4e6',
-                            500: '#f43f5e', // Vibrant red/pink
-                            600: '#e11d48', // Darker red
-                            900: '#881337',
-                        },
-                        accent: '#f59e0b', // Amber/Orange
-                    }
-                }
-            }
+            theme: { extend: { colors: { brand: { 50: '#fff1f2', 100: '#ffe4e6', 500: '#f43f5e', 600: '#e11d48', 900: '#881337' }, accent: '#f59e0b' } } }
         }
     </script>
 </head>
 <body class="font-sans text-gray-800 antialiased bg-gray-50">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-2">
                     <i class="fa-solid fa-fire-flame-curved text-brand-600 text-2xl"></i>
-                    <a href="#" class="font-extrabold text-2xl tracking-tight text-gray-900">
-                        CHICKEN<span class="text-brand-600">ONDA</span>
-                    </a>
+                    <a href="#" class="font-extrabold text-2xl tracking-tight text-gray-900">CHICKEN<span class="text-brand-600">ONDA</span></a>
                 </div>
-                
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#menue" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Speisekarte</a>
-                    <a href="#ueber-uns" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Über uns</a>
-                    <a href="#kontakt" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Kontakt & Anfahrt</a>
-                    <a href="tel:+496912345678" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-2.5 rounded-full font-semibold transition-all transform hover:-translate-y-0.5 shadow-md hover:shadow-lg flex items-center gap-2">
-                        <i class="fa-solid fa-phone"></i> Jetzt anrufen
-                    </a>
+                    <a href="#menue" class="text-gray-600 hover:text-brand-600 font-medium">Speisekarte</a>
+                    <a href="#ueber-uns" class="text-gray-600 hover:text-brand-600 font-medium">Über uns</a>
+                    <a href="#kontakt" class="text-gray-600 hover:text-brand-600 font-medium">Kontakt</a>
+                    <a href="tel:+496912345678" class="bg-brand-600 hover:bg-brand-500 text-white px-6 py-2.5 rounded-full font-semibold shadow-md transition-all">Jetzt anrufen</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="relative pt-20 pb-32 flex items-center min-h-[85vh]">
         <div class="absolute inset-0 z-0">
-            <img src="https://lh3.googleusercontent.com/grass-cs/ANxoTn1QkulrX0EsKUsU_2g__dZVn1wugey_J0oTtnEI_m3aHtbRc-PYasv_fUIT8w3YXhL3e5sAUh58x31bdgqj--Ln3iweBOtvbCNSKKXwhTyEq5l8YtYtWY7k8QbJHC3vUUqbkGJH1lMPZ7U=w359-h269-p-k-no" alt="Korean Fried Chicken" class="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/40"></div>
         </div>
-        
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center md:text-left mt-12">
-            <span class="inline-block py-1 px-3 rounded-full bg-accent/20 text-accent font-semibold text-sm mb-4 border border-accent/30 backdrop-blur-sm">
-                4,8 ⭐ (176+ Bewertungen)
-            </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-                Authentisches Korean <br class="hidden md:block" /> 
-                <span class="text-brand-500">Fried Chicken</span> im Gallus.
-            </h1>
-            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto md:mx-0">
-                Knusprig, saftig und unvergesslich – erlebe den echten Taste von Korea direkt in Frankfurt am Main. Vor Ort genießen, mitnehmen oder bequem nach Hause liefern lassen.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#menue" class="bg-brand-600 hover:bg-brand-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-brand-500/30 text-center">
-                    Menü ansehen
-                </a>
-                <a href="https://maps.google.com/?q=Kriegkstraße+23,+60326+Frankfurt+am+Main" target="_blank" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-sm px-8 py-4 rounded-full font-bold text-lg transition-all text-center flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-location-dot"></i> Route planen
-                </a>
-            </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-12">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Authentisches Korean <br><span class="text-brand-500">Fried Chicken</span> im Gallus.</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl">Knusprig, saftig und unvergesslich – erlebe den echten Taste von Korea direkt in Frankfurt.</p>
+            <a href="#menue" class="bg-brand-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg">Menü ansehen</a>
         </div>
     </header>
 
-    <section class="bg-white py-12 border-b border-gray-100 relative z-20 -mt-8 mx-4 sm:mx-8 lg:mx-auto max-w-6xl rounded-2xl shadow-xl">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-            <div class="flex items-center gap-4">
-                <div class="w-14 h-14 rounded-full bg-brand-50 flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-star text-accent text-2xl"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-900">Höchste Qualität</h3>
-                    <p class="text-sm text-gray-500">4,8 Sterne auf Google Reviews</p>
-                </div>
-            </div>
-            <div class="flex items-center gap-4">
-                <div class="w-14 h-14 rounded-full bg-brand-50 flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-pepper-hot text-brand-600 text-2xl"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-900">100% Authentisch</h3>
-                    <p class="text-sm text-gray-500">Original koreanische Rezepte</p>
-                </div>
-            </div>
-            <div class="flex items-center gap-4">
-                <div class="w-14 h-14 rounded-full bg-brand-50 flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-motorcycle text-brand-600 text-2xl"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-900">Flexibel Genießen</h3>
-                    <p class="text-sm text-gray-500">Dine-In, Takeaway & Delivery</p>
-                </div>
-            </div>
+    <!-- Trust Bar -->
+    <section class="bg-white py-12 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex items-center gap-4"><i class="fa-solid fa-star text-accent text-2xl"></i><div><h3 class="font-bold">Höchste Qualität</h3><p class="text-sm text-gray-500">4,8 Sterne Bewertung</p></div></div>
+            <div class="flex items-center gap-4"><i class="fa-solid fa-pepper-hot text-brand-600 text-2xl"></i><div><h3 class="font-bold">100% Authentisch</h3><p class="text-sm text-gray-500">Koreanische Originalrezepte</p></div></div>
+            <div class="flex items-center gap-4"><i class="fa-solid fa-motorcycle text-brand-600 text-2xl"></i><div><h3 class="font-bold">Flexibel</h3><p class="text-sm text-gray-500">Dine-In & Takeaway</p></div></div>
         </div>
     </section>
 
+    <!-- Menu Section -->
     <section id="menue" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Unsere Spezialitäten</h2>
-<h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">Das beste Chicken der Stadt</h3>
-<p class="mt-4 text-gray-600 mb-8">Egal ob feurig scharf, süß-klebrig oder klassisch knusprig – unsere hausgemachten Marinaden machen den Unterschied.</p>
-
-<!-- Bilder-Bereich -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
-    <img src="DEIN_LINK_1" alt="Speisekarte 1" class="rounded-xl shadow-lg border border-gray-200">
-    <img src="DEIN_LINK_2" alt="Speisekarte 2" class="rounded-xl shadow-lg border border-gray-200">
-</div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1588675646184-601fcf2ef7cb?auto=format&fit=crop&q=80&w=800" alt="Korean Fried Chicken" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-gray-900">ONDA Signature Chicken</h4>
-                            <span class="bg-gray-100 text-gray-800 text-xs font-bold px-2 py-1 rounded">Bestseller</span>
-                        </div>
-                        <p class="text-gray-600 mb-6">Doppelt frittiert für maximale Knusprigkeit, umhüllt von unserer süß-scharfen Gochujang-Geheimsoße. Ein Muss für jeden Besuch.</p>
-                        <p class="font-semibold text-brand-600">Ab 14,50 €</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&q=80&w=800" alt="Soy Garlic Chicken" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-bold text-gray-900 mb-4">Soy Garlic Wings</h4>
-                        <p class="text-gray-600 mb-6">Perfekt glasiert mit einer herzhaften Mischung aus gereifter Sojasauce, frischem Knoblauch und einem Hauch von Honig. Nicht scharf, aber voller Geschmack.</p>
-                        <p class="font-semibold text-brand-600">Ab 13,90 €</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1634509867909-6bc29391af26?auto=format&fit=crop&q=80&w=800" alt="Korean Sides" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-bold text-gray-900 mb-4">Sides & Streetfood</h4>
-                        <p class="text-gray-600 mb-6">Das Erlebnis komplett machen: Cheesy Tteokbokki (Reiskuchen), knackiger Kimchi-Salat und knusprige Mandu-Teigtaschen.</p>
-                        <p class="font-semibold text-brand-600">Ab 4,50 €</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center">
-                <p class="text-gray-500 text-sm mb-4">Preise zwischen 10–20 € pro Person.</p>
-                <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-brand-700 bg-brand-100 hover:bg-brand-200 transition-colors">
-                    Tisch anfragen
-                    <!-- ECHTE SPEISEKARTEN BILDER -->
-            <div class="mt-20 border-t border-gray-200 pt-16">
-                <div class="text-center mb-10">
-                    <h3 class="text-2xl font-bold text-gray-900">Unsere Karte im Detail</h3>
-                    <p class="mt-2 text-gray-600">Wirf einen Blick in unser aktuelles Menü.</p>
-                </div>
+                <h2 class="text-brand-600 font-bold uppercase text-sm mb-2">Unsere Spezialitäten</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">Das beste Chicken der Stadt</h3>
+                <p class="mt-4 text-gray-600 mb-8">Egal ob feurig scharf oder klassisch knusprig – unsere hausgemachten Marinaden machen den Unterschied.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    <!-- Menü Bild 1 -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwhIUCiieUQcIt19skouuKk54YW7EhI9iKEBWf8vouhOt5oUA59tneMfeN97HfAoYLrQx0KFkdMsgpBZFMymRWeoqsFn8P4feX1eU0NgtHIueD2SEEzNbPM6JLULWq8GY5trmp_lT-UkI0=w112-h112-p-k-no" alt="Chicken Onda Speisekarte Teil 1" class="w-full h-auto object-contain cursor-pointer hover:scale-105 transition-transform duration-500">
-                    </div>
-                    
-                    <!-- Menü Bild 2 -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFwtBxXmY-58oKndlGXUJ9Ib5ybrROjBkCKNsGsK9Wwi__xwPPv694ktigHetrel3G0h1zvIkxAEuIDF0gTKTnWRSgc3jaMfFkFtHGtmpCwD2gNqjSy16EmrSqPsQv0_C3fgY7tIwkA44lV=w112-h112-p-k-no" alt="Chicken Onda Speisekarte Teil 2" class="w-full h-auto object-contain cursor-pointer hover:scale-105 transition-transform duration-500">
-                    </div>
+                <!-- BILDER DER SPEISEKARTE HIER -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
+                    <img src="LINK_SPEISEKARTE_1" alt="Speisekarte Teil 1" class="rounded-xl shadow-lg border border-gray-200">
+                    <img src="LINK_SPEISEKARTE_2" alt="Speisekarte Teil 2" class="rounded-xl shadow-lg border border-gray-200">
                 </div>
             </div>
-            <!-- ENDE ECHTE SPEISEKARTEN BILDER -->
-                </a>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                    <h4 class="text-xl font-bold mb-4">ONDA Signature Chicken</h4>
+                    <p class="text-gray-600 mb-6">Doppelt frittiert für maximale Knusprigkeit mit Gochujang-Soße.</p>
+                    <p class="font-semibold text-brand-600">Ab 14,50 €</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                    <h4 class="text-xl font-bold mb-4">Soy Garlic Wings</h4>
+                    <p class="text-gray-600 mb-6">Herzhaft mit Sojasauce, Knoblauch und einem Hauch Honig.</p>
+                    <p class="font-semibold text-brand-600">Ab 13,90 €</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                    <h4 class="text-xl font-bold mb-4">Sides & Streetfood</h4>
+                    <p class="text-gray-600 mb-6">Cheesy Tteokbokki, Kimchi-Salat und knusprige Mandu.</p>
+                    <p class="font-semibold text-brand-600">Ab 4,50 €</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Über uns -->
     <section id="ueber-uns" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2">
-                    <div class="relative">
-                        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFqGczb845PCGMeGTvxC6-9IthN41TVwSyq5dbGHStVmEXOmQmP5z8-P1-_-opwWPH-qnKvJX6cYbJD5Jh7GFzvihRRw43FxCgoK7oC-WHPSRm5GjxkQrJI5gney2VNxYREdwm9UWd0qDY=w408-h306-k-no" alt="Restaurant Interior" class="rounded-2xl shadow-2xl">
-                        <div class="absolute -bottom-6 -right-6 bg-brand-600 text-white p-6 rounded-2xl shadow-xl hidden md:block">
-                            <p class="text-3xl font-bold">100%</p>
-                            <p class="text-brand-100 font-medium">Seoul Vibe</p>
-                        </div>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1000" class="rounded-2xl shadow-2xl">
                 </div>
                 <div class="lg:w-1/2">
-                    <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Die ONDA Story</h2>
-                    <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">Ein Stück Korea in Frankfurt.</h3>
-                    <p class="text-lg text-gray-600 mb-6">
-                        "Onda" bedeutet auf Koreanisch "Kommen". Und genau dazu laden wir dich ein: Komm vorbei und erlebe koreanische Gastfreundschaft mitten im Frankfurter Gallusviertel.
-                    </p>
-                    <p class="text-gray-600 mb-8">
-                        Wir legen größten Wert auf frische Zutaten, authentische Gewürze und die perfekte Frittier-Technik. Unser kleines, aber feines Restaurant in der Kriegkstraße ist der ideale Ort für ein entspanntes Abendessen mit Freunden, einen schnellen Snack zum Mitnehmen oder deine Delivery-Bestellung für den perfekten Serienabend.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-gray-700">
-                            <i class="fa-solid fa-check text-brand-500"></i> Hausgemachte Saucen nach Familienrezept
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-700">
-                            <i class="fa-solid fa-check text-brand-500"></i> Regionale Hähnchenqualität
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-700">
-                            <i class="fa-solid fa-check text-brand-500"></i> Gemütliches Ambiente drinnen & draußen
-                        </li>
+                    <h3 class="text-3xl font-extrabold mb-6">Ein Stück Korea in Frankfurt.</h3>
+                    <p class="text-gray-600 mb-6">"Onda" bedeutet "Kommen". Wir laden dich ein, authentische koreanische Gastfreundschaft zu erleben.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-500"></i> Original koreanische Rezepte</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-brand-500"></i> Regionale Qualitätszutaten</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Kontakt -->
     <section id="kontakt" class="py-24 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                
-                <div>
-                    <h2 class="text-3xl font-extrabold mb-8">Wir freuen uns auf deinen Besuch!</h2>
-                    
-                    <div class="space-y-6 mb-10">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-brand-600/20 flex items-center justify-center flex-shrink-0 text-brand-500">
-                                <i class="fa-solid fa-location-dot text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg">Adresse</h4>
-                                <p class="text-gray-400 mt-1">Kriegkstraße 23<br>60326 Frankfurt am Main<br>(Gallusviertel)</p>
-                                <a href="https://maps.google.com/?q=Kriegkstraße+23,+60326+Frankfurt+am+Main" target="_blank" class="text-brand-500 hover:text-brand-400 text-sm font-medium mt-2 inline-block">Auf Google Maps öffnen &rarr;</a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-brand-600/20 flex items-center justify-center flex-shrink-0 text-brand-500">
-                                <i class="fa-solid fa-clock text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg">Öffnungszeiten</h4>
-                                <ul class="text-gray-400 mt-1 space-y-1">
-                                    <li class="flex justify-between w-48"><span>Mo:</span> <span>Ruhetag</span></li>
-                                    <li class="flex justify-between w-48"><span>Di - Sa:</span> <span>17:00 - 21:30</span></li>
-                                    <li class="flex justify-between w-48"><span>So:</span> <span>16:00 - 21:00</span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-brand-600/20 flex items-center justify-center flex-shrink-0 text-brand-500">
-                                <i class="fa-solid fa-phone text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg">Kontakt</h4>
-                                <a href="tel:+496912345678" class="text-gray-400 hover:text-white transition-colors block mt-1">+49 (0) 69 123 456 78</a>
-                                <a href="mailto:hallo@chicken-onda.de" class="text-gray-400 hover:text-white transition-colors block">hallo@chicken-onda.de</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl p-8 lg:p-10 text-gray-900 shadow-2xl">
-                    <h3 class="text-2xl font-bold mb-6">Tisch anfragen / Vorbestellen</h3>
-                    <form action="#" method="POST" class="space-y-5">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Dein Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" placeholder="Max Mustermann" required>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefonnummer</label>
-                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" placeholder="Für Rückfragen" required>
-                            </div>
-                            <div>
-                                <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Wunschdatum / Zeit</label>
-                                <input type="text" id="date" name="date" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" placeholder="z.B. Morgen, 19:00 Uhr">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Deine Nachricht</label>
-                            <textarea id="message" name="message" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" placeholder="Reservierung für 4 Personen oder Bestellung zur Abholung..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-lg hover:shadow-brand-500/30">
-                            Anfrage senden
-                        </button>
-                        <p class="text-xs text-gray-500 text-center mt-4">Dies ist eine unverbindliche Anfrage. Wir melden uns umgehend zur Bestätigung.</p>
-                    </form>
-                </div>
-                
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-3xl font-extrabold mb-6">Kontakt & Anfahrt</h2>
+                <p class="text-gray-400 mb-4">Kriegkstraße 23<br>60326 Frankfurt am Main</p>
+                <a href="tel:+496912345678" class="text-xl text-brand-500 font-bold block mb-2">069 123 456 78</a>
+            </div>
+            <div class="bg-white rounded-2xl p-8 text-gray-900">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-lg">
+                    <textarea placeholder="Nachricht/Reservierung" class="w-full p-3 border rounded-lg"></textarea>
+                    <button class="w-full bg-brand-600 text-white py-3 rounded-lg font-bold">Anfrage senden</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-fire-flame-curved text-brand-600 text-xl"></i>
-                <span class="font-bold text-xl tracking-tight text-white">
-                    CHICKEN<span class="text-brand-600">ONDA</span>
-                </span>
-            </div>
-            
-            <div class="text-sm text-center md:text-left">
-                &copy; <span id="year"></span> Chicken ONDA Gallus. Alle Rechte vorbehalten.
-            </div>
-            
-            <div class="flex gap-6 text-sm">
-                <a href="#" class="hover:text-white transition-colors">Impressum</a>
-                <a href="#" class="hover:text-white transition-colors">Datenschutz</a>
-                <a href="#" class="hover:text-white transition-colors">Cookie-Einstellungen</a>
-            </div>
-        </div>
+    <footer class="bg-gray-950 text-gray-400 py-12 text-center text-sm">
+        &copy; 2026 Chicken ONDA Gallus. Alle Rechte vorbehalten.
     </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
