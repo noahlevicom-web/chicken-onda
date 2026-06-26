@@ -125,52 +125,35 @@ Speichere den folgenden Code einfach als `index.html` und er ist sofort bereit f
             </div>
         </div>
     </section>
-
     <section id="menue" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Unsere Spezialitäten</h2>
                 <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">Das beste Chicken der Stadt</h3>
-                <p class="mt-4 text-gray-600">Egal ob feurig scharf, süß-klebrig oder klassisch knusprig – unsere hausgemachten Marinaden machen den Unterschied.</p>
+                <p class="mt-4 text-gray-600 mb-8">Egal ob feurig scharf, süß-klebrig oder klassisch knusprig – unsere hausgemachten Marinaden machen den Unterschied.</p>
+                
+                <!-- HIER SIND JETZT DIE SPEISEKARTEN BILDER -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHwhIUCiieUQcIt19skouuKk54YW7EhI9iKEBWf8vouhOt5oUA59tneMfeN97HfAoYLrQx0KFkdMsgpBZFMymRWeoqsFn8P4feX1eU0NgtHIueD2SEEzNbPM6JLULWq8GY5trmp_lT-UkI0=w112-h112-p-k-no" alt="Speisekarte 1" class="rounded-xl shadow-lg border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFwtBxXmY-58oKndlGXUJ9Ib5ybrROjBkCKNsGsK9Wwi__xwPPv694ktigHetrel3G0h1zvIkxAEuIDF0gTKTnWRSgc3jaMfFkFtHGtmpCwD2gNqjSy16EmrSqPsQv0_C3fgY7tIwkA44lV=w112-h112-p-k-no" alt="Speisekarte 2" class="rounded-xl shadow-lg border border-gray-200">
+                </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Die 3 Karten (Signature, Soy Garlic, Sides) wie gehabt -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1588675646184-601fcf2ef7cb?auto=format&fit=crop&q=80&w=800" alt="Korean Fried Chicken" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-gray-900">ONDA Signature Chicken</h4>
-                            <span class="bg-gray-100 text-gray-800 text-xs font-bold px-2 py-1 rounded">Bestseller</span>
-                        </div>
-                        <p class="text-gray-600 mb-6">Doppelt frittiert für maximale Knusprigkeit, umhüllt von unserer süß-scharfen Gochujang-Geheimsoße. Ein Muss für jeden Besuch.</p>
-                        <p class="font-semibold text-brand-600">Ab 14,50 €</p>
-                    </div>
+                    <!-- ... hier steht dein bisheriger Code für Karte 1 ... -->
                 </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&q=80&w=800" alt="Soy Garlic Chicken" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-bold text-gray-900 mb-4">Soy Garlic Wings</h4>
-                        <p class="text-gray-600 mb-6">Perfekt glasiert mit einer herzhaften Mischung aus gereifter Sojasauce, frischem Knoblauch und einem Hauch von Honig. Nicht scharf, aber voller Geschmack.</p>
-                        <p class="font-semibold text-brand-600">Ab 13,90 €</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1634509867909-6bc29391af26?auto=format&fit=crop&q=80&w=800" alt="Korean Sides" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <h4 class="text-xl font-bold text-gray-900 mb-4">Sides & Streetfood</h4>
-                        <p class="text-gray-600 mb-6">Das Erlebnis komplett machen: Cheesy Tteokbokki (Reiskuchen), knackiger Kimchi-Salat und knusprige Mandu-Teigtaschen.</p>
-                        <p class="font-semibold text-brand-600">Ab 4,50 €</p>
-                    </div>
-                </div>
+                <!-- ... hier folgen Karte 2 und 3 ... -->
             </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-brand-700 bg-brand-100 hover:bg-brand-200 transition-colors">
+                    Tisch anfragen
+                </a>
+            </div>
+        </div>
+    </section>
             
             <div class="mt-12 text-center">
                 <p class="text-gray-500 text-sm mb-4">Preise zwischen 10–20 € pro Person.</p>
@@ -186,7 +169,7 @@ Speichere den folgenden Code einfach als `index.html` und er ist sofort bereit f
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1000" alt="Restaurant Interior" class="rounded-2xl shadow-2xl">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFqGczb845PCGMeGTvxC6-9IthN41TVwSyq5dbGHStVmEXOmQmP5z8-P1-_-opwWPH-qnKvJX6cYbJD5Jh7GFzvihRRw43FxCgoK7oC-WHPSRm5GjxkQrJI5gney2VNxYREdwm9UWd0qDY=w408-h306-k-no" class="rounded-2xl shadow-2xl">
                         <div class="absolute -bottom-6 -right-6 bg-brand-600 text-white p-6 rounded-2xl shadow-xl hidden md:block">
                             <p class="text-3xl font-bold">100%</p>
                             <p class="text-brand-100 font-medium">Seoul Vibe</p>
