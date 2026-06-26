@@ -118,25 +118,29 @@
             </div>
         </div>
     </section>
-    <section id="menue" class="py-24 bg-gray-50">
+<section id="menue" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-12">
                 <h2 class="text-brand-600 font-bold tracking-wide uppercase text-sm mb-2">Unsere Spezialitäten</h2>
                 <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900">Das beste Chicken der Stadt</h3>
-                <p class="mt-4 text-gray-600 mb-8">Egal ob feurig scharf, süß-klebrig oder klassisch knusprig – unsere hausgemachten Marinaden machen den Unterschied.</p>
-                <!-- HIER SIND JETZT DIE SPEISEKARTEN BILDER -->
-<div class="flex gap-6 justify-center">
-    <img src="images-speisekarte1.jpg"
-         alt="Speisekarte 1"
-         class="w-96 rounded-xl shadow-lg border border-gray-200">
-
-    <img src="images-speisekarte2.jpg"
-         alt="Speisekarte 2"
-         class="w-96 rounded-xl shadow-lg border border-gray-200">
-</div>
+                <p class="mt-4 text-gray-600">Egal ob feurig scharf, süß-klebrig oder klassisch knusprig – unsere hausgemachten Marinaden machen den Unterschied.</p>
             </div>
+
+            <!-- Hier: Flex-col (untereinander) auf Handy, md:flex-row (nebeneinander) ab Laptop -->
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <img src="images-speisekarte1.jpg"
+                     alt="Speisekarte 1"
+                     class="w-full md:w-96 rounded-xl shadow-lg border border-gray-200">
+
+                <img src="images-speisekarte2.jpg"
+                     alt="Speisekarte 2"
+                     class="w-full md:w-96 rounded-xl shadow-lg border border-gray-200">
+            </div>
+
             <div class="mt-12 text-center">
-                <a href="#kontakt" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-brand-700 bg-brand-100 hover:bg-brand-200 transition-colors">
+                <p class="text-gray-500 text-sm mb-4">Preise zwischen 10–20 € pro Person.</p>
+                <a href="#kontakt" class="inline-flex items-center justify-center px-8 py-3 bg-brand-600 hover:bg-brand-500 text-white font-bold rounded-full transition-all">
+                    Tisch anfragen
                 </a>
             </div>
         </div>
